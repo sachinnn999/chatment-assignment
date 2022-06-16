@@ -14,6 +14,9 @@
 4.  execute this `java -jar facts-1.0.0.jar`
 5.  Use this collection to test REST end points
 6.  Enjoy!
-    
+
+##### ***Facts App swagger***
+[http://localhost:8081/sachinnn/swagger-ui/index.html]
+
 ##### ***3rd Party Integrated API documentation***  
 [https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html](https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html)

@@ -34,7 +34,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		httpSecurity.csrf().disable()
-				.authorizeRequests().antMatchers("/hello","/authenticate","/facts/animal/*", "/h2-console/**").permitAll().anyRequest().authenticated()
+				.authorizeRequests().antMatchers("/hello","/authenticate","/facts/animal/*", "/h2-console/**","/api-docs/**", "/swagger-ui/**").permitAll().anyRequest().authenticated()
 				.and().
 				// make sure we use stateless session; session won't be used to
 				// store user's state.
