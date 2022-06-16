@@ -16,7 +16,7 @@
 6.  Enjoy!
 
 ##### ***Facts App swagger***
-[http://localhost:8081/sachinnn/swagger-ui/index.html]
+[http://localhost:8081/sachinnn/swagger-ui/index.html]([https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html](http://localhost:8081/sachinnn/swagger-ui/index.html)
 
 ##### ***3rd Party Integrated API documentation***  
 [https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html](https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html)
