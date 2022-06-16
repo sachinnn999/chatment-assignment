@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "d5ba41bb-7882-4a5d-924d-1dad07fa3943",
+		"name": "Facts-App",
+		"description": "# **FACTS APP**\n\nStartFragment\n\n### Chatment - Assignment (Back End Developer – Part Time)\n\n##### ***Requirements***\n\n*   jdk version = 11\n*   maven version >= 3.6.3\n    \n\nEndFragment\n\n1.  execute this`mvn clean package`\n2.  find the jar in target folder\n3.  copy and paste it desired folder\n4.  execute this `java -jar facts-1.0.0.jar`\n5.  Use this collection to test REST end points\n6.  Enjoy!\n    \n\n##### ***3rd Party Integrated API documentation***  \n[https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html](https://alexwohlbruck.github.io/cat-facts/docs/endpoints/facts.html)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Facts-DOG",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/sachinnn/facts/animal/dog",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sachinnn",
+						"facts",
+						"animal",
+						"dog"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Facts-CAT",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/sachinnn/facts/animal/cat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sachinnn",
+						"facts",
+						"animal",
+						"cat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"test\",\r\n    \"password\": \"test\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/sachinnn/authenticate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sachinnn",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "log",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8081/sachinnn/log",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"sachinnn",
+						"log"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "API-FACTS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://cat-fact.herokuapp.com/facts/random?animal_type=cat&amount=1",
+					"protocol": "https",
+					"host": [
+						"cat-fact",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"facts",
+						"random"
+					],
+					"query": [
+						{
+							"key": "animal_type",
+							"value": "cat"
+						},
+						{
+							"key": "amount",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
